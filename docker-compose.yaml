@@ -2,14 +2,16 @@ services:
   web:
     build:
       context: git@github.com:karmic-koalas/sibarita-front.git
-      ssh:
-        - default
+      ssh: [ "default" ]
     ports:
       - "80:80"
   api:
     build:
       context: git@github.com:karmic-koalas/sibarita-back.git
-      ssh:
-        - default
+      ssh: [ "default" ]
+    ports:
+      enviroment:
+        - USERNAME_DB
+        - PASSWORD_DB
     ports:
       - "3000:3000"
