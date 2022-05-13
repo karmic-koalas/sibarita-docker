@@ -1,13 +1,13 @@
 services:
   web:
     build:
-      context: git@github.com:karmic-koalas/sibarita-front.git
+      context: git@github.com:karmic-koalas/sibarita-front.git#main
       ssh: [ "default" ]
     ports:
       - "80:80"
   api:
     build:
-      context: git@github.com:karmic-koalas/sibarita-back.git
+      context: git@github.com:karmic-koalas/sibarita-back.git#main
       ssh: [ "default" ]
     env_file:
       - .env
