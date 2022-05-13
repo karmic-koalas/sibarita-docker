@@ -9,9 +9,7 @@ services:
     build:
       context: git@github.com:karmic-koalas/sibarita-back.git
       ssh: [ "default" ]
-    ports:
-      enviroment:
-        - USERNAME_DB
-        - PASSWORD_DB
+    env_file:
+      - .env
     ports:
       - "3000:3000"
