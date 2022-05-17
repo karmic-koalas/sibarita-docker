@@ -3,6 +3,8 @@ services:
     build:
       context: git@github.com:karmic-koalas/sibarita-front.git#main
       ssh: [ "default" ]
+    env_file:
+      - .env
     ports:
       - "80:80"
   api:
@@ -11,5 +13,3 @@ services:
       ssh: [ "default" ]
     env_file:
       - .env
-    ports:
-      - "3000:3000"
