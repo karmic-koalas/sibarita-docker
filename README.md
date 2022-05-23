@@ -1,0 +1,9 @@
+# .env file is needed.
+
+- USERNAME_DB=
+- PASSWORD_DB=
+- FRONTEND_URL=
+- TOKEN_SECRET=
+- MAILSERVICE=
+- MAILACCOUNT=
+- MAILPASS=
