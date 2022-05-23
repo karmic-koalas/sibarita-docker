@@ -13,3 +13,5 @@ services:
       ssh: [ "default" ]
     env_file:
       - .env
+    ports:
+      - "587:587"
